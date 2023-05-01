@@ -1,6 +1,8 @@
 import { Application } from 'express';
 import express = require('express');
 const bodyParser = require('body-parser');
+//TODO FIX BUILD ERRORS  WITH XADESJS
+import { SignedXml, Parse, Application as App } from 'xadesjs';
 
 const app: Application = express();
 const port: number = +(process.env.PORT ?? '3000');
